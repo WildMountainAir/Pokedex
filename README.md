@@ -27,12 +27,12 @@ Test the api `GET /api/v2/pokemon/{id or name}/` endpoint with httpie or Postman
 
 Start building your components in the `src/` folder. Work though the functionality in this order:
 
-- [ ] The `App` component will contain the data for your pokedex and methods to modify the pokemon in your pokedex.
+- [X] The `App` component will contain the data for your pokedex and methods to modify the pokemon in your pokedex.
   - a pokemon object should look like this: `{ name: 'Abra', img: 'http://...' }`
-- [ ] The `Header` component should render a title header and any additional static information in the navbar.
+- [X] The `Header` component should render a title header and any additional static information in the navbar.
 - The `Pokemon` component should get passed name and img props and render the data to an img and p tag respectively. This component should be simple and reusable.
-- [ ] The `PokemonList` component should get passed an array of pokemon objects in props and render a `Pokemon` component for each object.
-- [ ] The `Search` component will render an input and button allowing the user to search for pokemon by name and add them to the pokedex. You will need to make a request to the PokeAPI when the input changes and capture/save the result when the user clicks the Add button.
+- [X] The `PokemonList` component should get passed an array of pokemon objects in props and render a `Pokemon` component for each object.
+- [X] The `Search` component will render an input and button allowing the user to search for pokemon by name and add them to the pokedex. You will need to make a request to the PokeAPI when the input changes and capture/save the result when the user clicks the Add button.
   - This should cause the `PokemonList` component to re-render, showing the newly added pokemon
 
 ### Stretch Goals
@@ -45,11 +45,11 @@ Start building your components in the `src/` folder. Work though the functionali
 
 To style your pokedex use the following classes:
 
-- `pokedex`: add to top level div in the main `App` component
-- `nav`: add to the `Header` component
-- `pokemon-list`: add to top level div in the `PokemonList` component
-- `pokemon`: add to top level div in the `Pokemon` component
-- `search`: add to the top level div in the `Search` component
-- `screen`: add to a second level div inside the `Search` component
+- [X] `pokedex`: add to top level div in the main `App` component
+- [X] `nav`: add to the `Header` component
+- [X] `pokemon-list`: add to top level div in the `PokemonList` component
+- [X] `pokemon`: add to top level div in the `Pokemon` component
+- [X] `search`: add to the top level div in the `Search` component
+- [X] `screen`: add to a second level div inside the `Search` component
 
 The above styles are entirely optional. Prioritize functionality first.

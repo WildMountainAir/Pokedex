@@ -14,9 +14,12 @@ body {
 
 .pokedex {
   margin: 2em;
-  background-color: #DC092D;
+  background-image: url(https://i.imgur.com/Q8Uxg19.jpg);
+  background-size: contain; 
   display: grid;
-  border-radius: 6px;
+  height: 700px;
+  width: auto;
+  border-radius: 20px;
   grid-template-areas:
     "nav nav"
     "search pokedex";
@@ -24,10 +27,11 @@ body {
 
 .nav {
   font-family: pokemon;
-  color: yellow;
-  letter-spacing: 6px;
+  text-align: center;
+  color: red;
+  letter-spacing: 8px;
   grid-area: nav;
-  margin: 0;
+  margin: 5px;
   padding: 1em;
 }
 
@@ -46,12 +50,12 @@ body {
 
 .screen {
   margin: 0 auto;
-  width: 300px;
-  height: 230px;
-  margin: 2em auto;
-  padding: 2em;
-  background-color: rgb(230, 230, 230);
-  border-radius: 6px;
+  width: 400px;
+  height: 330px;
+  margin: auto;
+  padding: 1em;
+  background-color: rgba(230, 230, 230, 0.603);
+  border-radius: 20px;
 }
 
 .screen .pokemon {
@@ -59,12 +63,18 @@ body {
 }
 
 .pokemon-list {
+  height: 400px;
+  width: 800px;
+  padding: 1em;
+  background-color: rgba(230, 230, 230, 0.603);
+  border: 2px solid yellow;
+  border-radius: 20px;
   grid-area: pokedex;
-  padding: 0 2em 2em 2em;
+  margin: 5px;
 }
 
 .pokemon-list h2 {
-  margin-top: 0;
+  margin-top: 2;
 }
 
 .pokemon-list .pokemon {
@@ -89,18 +99,20 @@ body {
 }
 
 .screen .pokemon {
-  background: #2d2d2d;
+  background: #333333;
   color: white;
 }
 
 button {
   padding: 0.5em;
-  background: green;
+  background: red;
   color: white;
   border: none;
   border-radius: 6px;
-  font-weight: bold;
+  font-family: pokemon;
+  font-weight: 100;
   font-size: 16px;
+  letter-spacing: 5px;
   text-transform: uppercase;
 }
 
@@ -109,5 +121,20 @@ button:focus {
 }
 
 button:hover {
-  cursor: pointer;
+  cursor: crosshair;
+}
+
+h2 {
+  font-family: pokemon;
+  letter-spacing: 8px;
+  color: #333333;
+  margin-left: 50px;
+}
+
+.area {
+  margin-left: 50px;
+}
+
+input {
+  margin-left: 50px;
 }
