@@ -7,7 +7,7 @@ function Pokemon(props) {
   return (
     <div className="pokemon">
       <img src={props.img}/>
-      <h2>{props.name}</h2>
+      <p>{props.name}</p>
     </div>
   );
 }
