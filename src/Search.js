@@ -82,15 +82,17 @@ class Search extends React.Component {
         <div className='screen'>
         <Pokemon name={name} img={img}/>
         </div>
-        <h2>Search Pokémon</h2>
-        <input 
-          type="text"
-          value={this.state.search}
-          onChange={this.handleChange}
-        />
-        <button
-          onClick={this.addPokemon}
-        >Add Pokémon</button>
+        <div className="area">
+          <h2>Search Pokémon</h2>
+          <input 
+            type="text"
+            value={this.state.search}
+            onChange={this.handleChange}
+          />
+          <button
+            onClick={this.addPokemon}
+          >Add Pokémon</button>
+        </div>
       </div>
     )
   }
