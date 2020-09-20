@@ -31,8 +31,8 @@ class Search extends React.Component {
       .then((result) => result.json())
       .then((data) => {
           console.log("pokémon in get request: data: ", data);
-        // const pokemon = {name: data.name, img: data.sprites.front_default}
-        const pokemon = {name: data.name, img: data.sprites.front_shiny}
+        const pokemon = {name: data.name, img: data.sprites.front_default}
+        // const pokemon = {name: data.name, img: data.sprites.front_shiny}
         console.log("pokémon in get request", pokemon);
         this.setState({
           result: pokemon
@@ -83,7 +83,7 @@ class Search extends React.Component {
         <Pokemon name={name} img={img}/>
         </div>
         <div className="area">
-          <h2>Search Pokémon</h2>
+          <h2 classname="searchword">Search Pokémon</h2>
           <input 
             type="text"
             value={this.state.search}
