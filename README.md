@@ -1,12 +1,8 @@
 # React Pokedex
 
-Your task is to create a Pokedex application using React. The purpose of this project is to practice react component structure, state & props as well as communicating with an API on user input.
+Pokedex application using React. The purpose of this project was to practice react component structure, state & props as well as communicating with an API on user input.
 
 ## Setup
-
-Before you can begin working on the components you need to understand the included `babel` & `webpack` workflow. Take a few minutes to read through the files provided taking note of the scripts listed in the `package.json` and the `webpack.config` & `.babelrc` files. Try starting the application and check that everything builds and loads correctly before moving on.
-
-(Note: There is an optional `style.css` file included in the project to help your pokedex look pretty. Feel free to add the provided classes in as you go or leave them out entirely. See style notes below.)
 
 The component tree will look like this:
 
@@ -19,7 +15,7 @@ App
 │   ├── Pokemon
 ```
 
-To complete this project you will need to use the free PokeApi. Look through the following docs: https://pokeapi.co/docs/v2.html
+Utilized free PokeApi. Look through the following docs: https://pokeapi.co/docs/v2.html
 
 Test the api `GET /api/v2/pokemon/{id or name}/` endpoint with httpie or Postman before moving on to coding.
 
